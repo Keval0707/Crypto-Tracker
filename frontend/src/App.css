@@ -1,0 +1,94 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.crypto-tracker {
+  background: rgba(30, 30, 60, 0.9);
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.crypto-tracker h1 {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.crypto-table th {
+  background: rgba(78, 84, 200, 0.3);
+  color: #ffffff;
+  padding: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease;
+}
+
+.crypto-table th:hover {
+  background: rgba(78, 84, 200, 0.5);
+}
+
+.crypto-table tr {
+  background: rgba(30, 30, 60, 0.7);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.crypto-table tr:hover {
+  transform: translateY(-5px);
+  background: rgba(78, 84, 200, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.crypto-table td {
+  padding: 15px;
+  color: #e0e0e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease;
+}
+
+.crypto-table td:nth-child(3),
+.crypto-table td:nth-child(4) {
+  text-align: right;
+  font-weight: bold;
+}
+
+.crypto-table td[style*="color: green"] {
+  color: #2ecc71 !important;
+}
+
+.crypto-table td[style*="color: red"] {
+  color: #e74c3c !important;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  .crypto-tracker {
+    padding: 10px;
+  }
+
+  .crypto-table th, .crypto-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

@@ -172,4 +172,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 - **Author**: Keval Amitkumar Dhabalia
-- **Email**: your-email@example.com
+- **Email**: dhabaliakeval@gmail.com
